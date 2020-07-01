@@ -184,7 +184,7 @@ header{
 
 
 .races{
-    background-image: url('./images/background.jpg');
+    background-image: url('../images/background.jpg');
     background-size: cover;
 }
 .races-title__text{
