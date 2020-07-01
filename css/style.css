@@ -1,0 +1,386 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+   }
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+/* ------------NAV----------- */
+nav{
+    background-color: #060B28;
+}
+.nav-contacts{
+    margin-top: 10px;
+    font-size: 1.1vw;
+}
+.nav-contacts, .nav-menu{
+    color:#fff;
+}
+.nav-menu{
+    margin: 30px 0 20px 0;
+}
+.nav-menu ul{
+    display: flex;
+    list-style: none;
+}
+.nav-menu ul li{
+    margin-left: 25px;
+}
+.arrow-down {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+}
+.nav-languages__logo{
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.nav-languages__text{
+    font-weight: bold;
+}
+.nav-link{
+    color:#fff !important;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.nav-item{
+    margin-right: 3vw;
+    white-space: nowrap;
+}
+#navbarToggleExternalContent li{
+    list-style-type:none;
+    color: white;       
+}
+    /* ------nav dropdown------ */
+
+    .dropdown-menu {
+        margin-top: 0;
+    }
+    .dropdown-menu .dropdown-toggle::after {
+        vertical-align: middle;
+        border-left: 4px solid;
+        border-bottom: 4px solid transparent;
+        border-top: 4px solid transparent;
+    }
+    .dropdown-menu .dropdown .dropdown-menu {
+        left: 100%;
+        top: 0%;
+        margin:0 20px;
+        border-width: 0;
+    }
+    .dropdown-menu .dropdown .dropdown-menu.left {
+        right: 100%;
+        left: auto;
+    }
+    
+    .dropdown-menu > li a:hover,
+    .dropdown-menu > li.show{
+        background: #060B28;
+        color: white;
+    }
+    .nav-link:hover{
+        color:#95D5B8 !important;
+    }
+    .dropdown-menu > li.show > a{
+        color: #95D5B8;
+    }
+    
+    @media (min-width: 768px) {
+        .dropdown-menu .dropdown .dropdown-menu {
+            margin:0;
+            border-width: 1px;
+        }
+    }
+    .contacts-mobile{
+        background-color: #101328;
+        display: none;
+    }
+    .contacts-mobile a{
+        color: white;
+        font-size: 3vw;
+    }
+/* ------------------------HEADER--------------------- */
+header{
+    position: relative;
+}
+.header-banner img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+.header-button{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    color: white;
+
+    border-radius: 100px;
+    border:2px solid #95D5B8;
+}
+
+
+/* ------------------------SECTION--------------------- */
+
+
+    /* ----------------GENERAL--------------------- */
+.general{
+    background-color: #101328;
+    position: relative;
+}
+.general-title{
+    color: #95D5B8;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+.general-more{
+    color: #fff;
+    margin-top: 2rem;
+}
+.general-more__more{
+    padding: 0 7px 5px 7px;
+    border:1px solid #fff;
+    border-radius: 20px;    
+}
+.general-more__arrow{
+    font-size: 13px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    /* border:1px solid #fff; */
+    border-radius: 50%;
+}
+
+.general-chip__image{
+    width: 80%;
+}
+.general-chip__live{
+    position: absolute;
+    top: 95%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+
+    background-color: #fff;
+    color: #E41E26;
+    border-radius: 8px;
+    border:2px solid #E41E26;
+    padding: 1px 8px;
+    font-weight: bold;
+}
+.general-card__img, .general-casino__img{
+    width: 100%;
+}
+
+
+    /* ----------------RACES--------------------- */
+
+
+.races{
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+}
+.races-title__text{
+    color: black;
+    font-weight: bold;
+}
+.races-title__icon{
+    color:white;
+}
+.races-title{
+    font-size: 1.5rem;
+}
+.races-more__text{
+    color: white;
+    padding: 0 7px 3px 7px;
+    border:2px solid #fff;
+    border-radius: 20px;    
+}
+
+
+        /* ----------------RACES GAME--------------------- */
+
+
+.races-game{
+    background-color: #20201F;
+    color: white;
+    padding: 0;
+    border-radius: 10px;
+}
+.races-game__table__key{
+    padding: 0 10px;
+}
+.races-game__table__value{
+    padding:0 10px;
+    font-size: 1.6vw;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #3ACDDD;
+    border-radius: 50%;
+    display: inline-block;
+}
+.races-game__table__play{
+    color: white;
+    background-color: #3ACDDD;
+    padding: 0 15px 1px 15px;
+    border-radius: 20px;   
+}
+.races-game__table__trophy{
+    padding: 5px;
+    margin-right: 15px;
+}
+.races-game tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+.races-game tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+
+
+        /* ----------------POPULAR--------------------- */ 
+
+
+.races-title{
+    color: black;
+    margin-top: 3rem;
+}
+.races-more{
+    color: #fff;
+    margin-top: 2rem;
+}
+.races-more__more{
+    padding: 0 7px 5px 7px;
+    border:1px solid #fff;
+    border-radius: 20px;    
+}
+.races-more__arrow{
+    font-size: 13px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    /* border:1px solid #fff; */
+    border-radius: 50%;
+}
+.races-popular img{
+    width: 100%;
+}
+
+
+
+    /* ----------------PREMIUM--------------------- */
+
+
+.premium{
+    background-color: #101328;
+}
+.premium-title{
+    color: #95D5B8;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+.premium-more{
+    color: #fff;
+    margin-top: 2rem;
+}
+.premium-more__more{
+    padding: 0 7px 5px 7px;
+    border:1px solid #fff;
+    border-radius: 20px;    
+}
+.premium-more__arrow{
+    font-size: 13px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    /* border:1px solid #fff; */
+    border-radius: 50%;
+}
+.premium img{
+    width: 100%;
+    
+}
+.premium-quote__icon{
+    height: 80px;
+}
+.premium-quote__title{
+    color:#95D5B8;
+    font-size: 1.2rem;
+    vertical-align: -webkit-baseline-middle;
+}
+.premium-quote__text{
+    color: #fff;
+}
+
+/* ------------------------FOOTER--------------------- */
+footer{
+   
+}
+.footer-widget a{
+    color: white;
+}
+.footer-widget h5{
+    color: #95D5B8;
+    margin-bottom: 10%;
+    background-color: #4F6477;
+}
+.footer-nav li{
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    list-style: none;
+    color: white;
+}
+.footer-widget{
+    background-color: #4F6477;
+}
+.footer-bottom{
+    background-color: #101328;
+}
+.footer-bottom__social,.footer-bottom__text{
+    color:#fff;
+}
+section  i.fa, footer  i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 0px 1px #fff;
+    padding: 0.5em 0.6em;
+  
+  }
+@media only screen and (max-width: 576px){
+    .header-button{
+        font-size: 0.5rem;
+        padding: 10px 25px;
+    }
+    .races-game__table__key,.races-game__table__value{
+        font-size: 2vw;
+    }
+    .dot{
+        width: 5px;
+        height: 5px;
+    }
+    .playing{
+        font-size: 2.5vw;
+    }
+}
+@media only screen and (max-width: 767px){
+    .contacts-mobile{
+        display: block;
+    }
+    .nav-link {
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+    .logo-casino{
+        width: 40%;
+    }
+    .flag-icon{
+        border:none;
+    }
+    .contacts{
+        display: none;
+    }
+}
